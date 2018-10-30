@@ -64,4 +64,6 @@ JavaScript
 Clarify Design
 Este proyecto se publica bajo la licencia MIT
 
-https://i.imgur.com/427oSZP.png
+
+![alt text](https://i.imgur.com/427oSZP.png)
+

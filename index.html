@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>The head tittle</title>
+
+	<!-- Zona de Estilos -->
+	<link rel="stylesheet" href="resources/css/style.css" />
+	<link rel="stylesheet" href="resources/css/clr-ui.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/@clr/icons@0.13.4/clr-icons.min.css" />
+	
+
+</head>
+<body>
+	
+	<div class="main-container">
+<!---------------------------------Zona de Cabecera-------------------------------------->
+		<header class="header-8">
+			<div class="branding">
+			    <clr-icon  class="icono" shape="bar-chart"></clr-icon>
+			    <span class="title">¿A dónde se van nuestros productos?</span>
+			</div>	
+		</header>
+<!---------------------------------FIN Zona de Cabecera-------------------------------------->
+		<div class="content-container">
+		    <div class="content-area">
+<!---------------------------------Zona de Cards-------------------------------------->
+				<div class="row">
+
+					<div class="clr-col-md-16 clr-col-sm-12 central-container">
+			           <div class="clr-row ">
+
+			           		<!----
+			           		<canvas id = "network" class = "net" width = "800", height ="400"></canvas>
+			           		--->
+			           		<div width = "20", height ="200"> 
+			           			<span class = "title"  >Objetivo:</span> <br>
+			           			<span>La finalidad de esta visualización es poder explorar y descubrir <br>las rutas de los principales productos de exportación Colombianos. <br> Desde los departamentos que las comercializan, hasta los países <br>a los que llegan.</span>
+			           			<p><span class = "title"  >Instrucciones:</span> <br></p>
+								<ul> Los puntos en la gráfica representan:
+									<ul>
+									  <li>Departamentos en Colombia</li>
+									  <li>Productos generados en Colombia</li>
+									  <li>Países a los que exportamos los productos</li>
+									</ul>
+								  </ul>
+								  <span>Las líneas representan las rutas recorridas por los productos. <br> <br>
+								  El usuario puede hacer click sobre cualquier nodo, y <br>dependiendo del tipo, se mostrará lo siguiente:<br> Si hizo click sobre un departamento, se muestran los productos que <br>comercializan allí, y los países a los que se les vende.  Si hizo <br>click sobre un producto, se muestran todos los departamentos <br>que los comercializan, y los países en donde terminan, y si hizo <br>click sobre un país, se mostrará, todos los productos que reciben, <br>y de que departamento proviene cada uno</span>
+
+
+			           		</div>
+			           		<div>
+			           			<svg id = "network" class = "net" width = "800", height ="500"></svg>
+			           		</div>
+
+			           </div>
+			        </div>
+
+				    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+				        <div class="card">
+				            <div class="card-header">
+				                WHAT
+				            </div>
+				            <div class="card-block">
+				                <div class="card-text">
+				                    Los datos escogidos para la visualización provienen de una Tabla. El DataSet representa una Red, en donde se relacionan departamentos comercializadores de productos, los productos como tal, y los países hacia donde se exportan dichos productos. 
+				                    <h4>Variables</h4>
+				                    <ul>
+		  								<li>Departamento:  Categórica</li>
+			  						    <li>Producto: Categórica</li>
+			  						    <li>País: Categórica</li>
+									</ul>
+						 
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+				        <div class="card">
+				            <div class="card-header">
+				                WHY
+				            </div>
+				            <div class="card-block">
+				                <div class="card-text">
+				                	<h5>Locate/Discover Path</h5>
+				                	Localizar o descubrir las rutas que hay para los productos que se producen o se comercializan en nuestro país. 
+
+				                	<h5>Summarize Topology</h5>
+				                	Resumir la topología: Tener un panorama general de toda la topología de las exportaciones en Colombia 
+				                    
+				                    <h5>Identify Outliers</h5>
+				                	Identificar datos atípicos en las rutas de las exportaciones en Colombia.
+
+				                	<h5>Explore Feature</h5>
+				                	La visualización permite al usuario la exploración de datos a tráves de sus interacciones y de esta manera descubrir datos interesantes.
+
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+				        <div class="card">
+				            <div class="card-header">
+				                HOW
+				            </div>
+				            <div class="card-block">
+				                <div class="card-text">
+				                    
+				                    <h6>Marcas</h6>
+				                    <ul>
+		  								<li>Puntos: Para los departamentos, países y productos</li>
+			  						    <li>Líneas: Para las relaciones de ruta, entre los departamentos, países y productos</li>
+									</ul>
+									<h6>Canales</h6>
+				                    <ul>
+		  								<li>Color Hue: Para los tipos de nodos, separar a los productos, departamentos y países</li>
+			  						    <li>Align: los nodos tienen una alineación dependiendo el tipo</li>
+			  						    <li>Separate: Los nodos se encuentran separados unos de otros</li>
+									</ul>
+									<h6>Manipulate</h6>
+				                    <ul>
+		  								<li>Select: El usuario puede seleccionar un nodo, y ver sus rutas</li>
+									</ul>
+									<h6>Facet</h6>
+				                    <ul>
+		  								<li>Partition: Los nodos se encuentran particionados por su tipo</li>
+									</ul>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+
+				    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+				        <span class = "title"  >Insights:</span> <br>
+				        <span>:</span> <br>
+			           				
+				    </div>
+
+
+				</div>
+<!---------------------------------FIN Zona de Cards-------------------------------------->  
+		    </div>
+		</div>
+	</div>
+
+
+    <!-- Zona de Scripts -->
+	<script src="https://unpkg.com/@clr/icons@0.13.4/clr-icons.min.js"></script>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	<script charset="utf-8" type="text/javascript" src="resources/js/network_svg.js"></script>
+</body>
+</html>
